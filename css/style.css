@@ -1,0 +1,100 @@
+.countdown-container {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background: url("./../images/pattern-hills.svg") no-repeat 100% 114%;
+  position: relative;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+  text-transform: uppercase;
+}
+.countdown-container::before {
+  content: "";
+  background: hsl(235, 16%, 14%) url("./../images/bg-stars.svg") no-repeat
+    center center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -5555;
+}
+
+h1 {
+  padding-top: 80px;
+}
+.calender-card {
+  color: hsl(345, 95%, 68%);
+}
+.calender-card h6 {
+  color: hsl(237, 18%, 59%);
+}
+.card-number {
+  background-color: hsl(236, 21%, 26%);
+  border-radius: 6px;
+  position: relative;
+  transform: translate(0%, 0%);
+}
+.card-number::before {
+  content: "";
+  background-color: hsl(234, 17%, 12%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0.5px;
+  transform: translate(-50%, -50%);
+}
+.card-number::after {
+  content: "";
+  background-color: hsl(234, 17%, 12%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transform: translateY(100%);
+}
+
+.circle-right,
+.circle-left {
+  display: flex;
+  background-color: hsl(234, 17%, 12%);
+  width: 5px;
+  height: 10px;
+  position: absolute;
+}
+.circle-right {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle-left {
+  left: 0;
+  top: 50%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: translateY(-50%);
+}
+.active {
+  color: hsl(345, 95%, 68%) !important;
+}
+.links {
+  font-size: 12px;
+  margin-block: 80px !important;
+}
+@media screen and (max-width: 700px) {
+  .countdown-container {
+    background: url(./../images/pattern-hills.svg) no-repeat;
+    background-position: 30% 100%;
+  }
+  .calender-container {
+    width: 80% !important;
+  }
+}
