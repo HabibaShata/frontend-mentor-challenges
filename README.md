@@ -1,23 +1,11 @@
-# frontend-mentor-challenges
-Launch Countdown Timer Challenge from Frontend Mentor
+# Frontend Mentor Challenges
 
-This is a solution to the Launch Countdown Timer challenge on Frontend Mentor. The goal was to build a responsive countdown timer based on the provided design.
+This repository contains my solutions to various Frontend Mentor challenges. Each challenge is organized in its own folder with its source code and README.
 
-🚀 What I learned
-How to build a real-time countdown timer using JavaScript
+## 🚀 Challenges
 
-Handling date and time calculations in JS
+- [Launch Countdown Timer](./launch-countdown-timer)
+- [QR Code Component](./qr-code-component)
+- [Interactive Rating Component](./interactive-rating-component)
 
-Structuring and styling responsive layouts with Flexbox
-
-Using custom fonts and shadows to match a design spec
-
-🛠️ Technologies Used
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-🔗 Frontend Mentor Challenge
-
+More coming soon!
